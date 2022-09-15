@@ -23,3 +23,19 @@ print(type(list_numbers))
 # lists are mutable (they can be changed)
 list_numbers[0] = "hello"
 print(list_numbers)
+
+# use len() to find out how many elements are in a list
+print(len(list_numbers))
+list_numbers.append("another element")
+# print out the last element in the list... suppose we don't know at compile time exactly how many elements
+print(list_numbers[len(list_numbers) - 1])
+
+# we can declare an empty list!
+empty_list = []
+print(len(empty_list))
+
+# we can have lists of list (2D or ND)
+
+nested_list = [[0, 1], [2], [3], [4, 5], []]
+print(len(nested_list))
+print(len(nested_list[0]))
